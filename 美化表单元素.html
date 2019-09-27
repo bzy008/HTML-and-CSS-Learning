@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	新的伪类
+	1.focus
+	元素聚焦的样式
+
+	2.checked
+	单选或多选框被选中的样式
+	<style type="text/css">
+	input:checked+label{
+		background:red;
+	}
+	</style>
+	<p>
+		性别：
+		<input id="male" type="radio" name="gender">
+		<label for="male">男</label>
+		<input id="female" type="radio" name="gender">
+		<label for="female">女</label>
+	</p>
+
+
+	常见用法
+	重置表单元素样式
+	input, textarea, button, select{
+		border:none;
+
+	}
+
+	input:focus, ...{
+		outline:none;
+		outline-offset:none
+	}
+
+	设置textarea是否允许调整尺寸
+	css属性resize：
+	both：默认值
+	none：不能调整尺寸
+	horizontal：水平方向调整
+	vertical：竖直方向调整
+
+	文本框边缘到内容的距离
+	input{
+		padding：0 10px;
+	}
+
+	input{ 
+		text-indent: 1em;
+	}
+
+	控制单选和多选的样式
+	<style type="text/css">
+		.radio{
+			width: 12px;
+			height: 12px;
+			border: 1px solid #999;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+
+		.radio.checked{
+			border-color: #444;
+		}
+
+		.radio.checked::after{
+			content: "";
+			display: block;
+			width: 5px;
+			height: 5px;
+			background: #f40;
+			margin-left: 3.5px;
+			margin-top: 3.5px;
+			border-radius: 50%;
+		}
+	</style>
+	<div class="radio checked">
+		
+	</div>
+</body>
+</html>

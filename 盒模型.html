@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	盒子类型
+	1. 行盒，display等于inline的元素 可以换行
+	2. 块盒，display等于block的元素 独占一行
+
+	display默认值inline
+	块盒 容器元素 h p
+	行盒 span a img video audio
+
+	盒子组成
+	从内到外
+	1.内容 content
+	width，height，设置的盒子内容的宽高
+	content-box
+
+	2.填充（内边距） padding
+	盒子边框到盒子内容的距离
+	padding-left/right/top/bottom
+	padding: 上 右 下 左
+	填充区+内容区 填充盒 padding-box
+
+	3.边框 border
+	边框 = 边框样式 + 边框宽度 + 边框颜色
+	border-style
+	border-width
+	border-color
+	border: 4px solid red
+	border-box 边框盒
+
+	4.外边距 margin
+	边框到其他盒子的距离
+
+	改变宽高范围
+	1.精确计算
+	2.css3 box-sizing
+	box-sizing:border-box
+
+	背景覆盖范围
+	默认情况，背景覆盖边框盒
+	可以通过background-clip进行修改
+
+	溢出处理
+	overflow，控制内容溢出边框盒后的处理方式
+
+	断词规则
+	word-break,会影响文字在什么位置被截断换行
+	normal:普通。 cjk字符
+	break-all:截断所有。所有字符都在文字处截断
+	keep-all:保持所有。所有文字都在单词间截断
+
+	空白处理
+	white-space:nowrap; 
+	overflow:hidden;
+	text-overflow:ellipsis;
+	未显示的文本用省略号显示
+</body>
+</html>

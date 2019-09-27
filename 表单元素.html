@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	表单元素
+	主要用于收集用户数据
+
+	input
+	文本输入
+	<input type="" value="" placeholder="" name="">
+	type属性：输入框类型
+		text:普通文本输入框
+		<input type="text" name="">
+		
+		password:密码框
+		<input type="password" name="">
+		
+		date：日期选择框
+		<input type="date" name="">
+		
+		search：搜索框
+		<input type="search" name="">
+		
+		range：滑块 min= max=
+		<input type="range" name="" min=0 max=100>
+		
+		color：颜色选择
+		<input type="color" name="">
+		
+		number：数字输入框 min= max= step=
+		<input type="number" name="" min="" max="" step="">
+		
+		checkbox:多选框 需要name分组
+		<input type="checkbox" name="" checked="">
+		
+		radio：单选框 需要name分组
+		<input type="radio" name="" checked="">
+
+		file:选择文件上传
+		<input type="file" name="">
+	value属性：输入框的值
+	placeholder属性:显示提示文本 （以前用JS实现有bug，输入提示字没反应，如新浪网）
+
+
+	select
+	下拉列表选择框
+	通常和option
+	<p>
+		请选择城市：
+		<select>
+			<option>上海</option>
+			<option>北京</option>
+			<option selected>成都</option>
+		</select>
+	</p>
+	
+	<!-- 分类 -->
+	<p>
+		选择最喜欢的主播：
+		<select>
+			<optgroup label="才艺">
+				<option>1</option>
+			</optgroup>
+			<optgroup label="游戏">
+				<option>2</option>
+				<option>3</option>
+			</optgroup>
+		</select>
+	</p>
+
+
+	textarea
+	文本域，多行文本框
+	<p>
+		简介：
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+	</p>
+
+	
+	按钮元素
+	button
+	 type属性：reset，submit，button 默认值是submit
+	 <p>
+	 	<button type="button">按钮</button>
+	 </p>
+
+	
+
+	配合表单元素的其他元素
+	label
+	普通元素，通常配合单选和多选框使用
+	可以通过for属性，让label元素关联某一个表单元素，for属性书写表单元素id的值
+	显示关联
+	<p>
+		性别：
+		<input id="male" type="radio" name="gender">
+		<label for="male">男</label>
+		<input id="female" type="radio" name="gender">
+		<label for="female">女</label>
+	</p>
+
+	隐式关联
+	<label>
+		<input type="radio" name="gender">
+		男
+	</label>
+	<label>
+		<input type="radio" name="gender">
+		女
+	</label>
+
+
+	datalist
+	数据列表
+	不会显示在页面，通常和普通文本框配合
+	<p>
+		<input type="text" list="userAgant">
+	</p>
+	<datalist id="userAgant">
+		<option value="Chrome">谷歌</option>
+		<option value="IE">IE</option>
+		<option value="Firefox">火狐</option>
+	</datalist>
+
+
+	form元素
+	会将整个元素，放置form元素的内部，作用是当提交表单时，会将form元素内部的表单内容以合适的方式提交到服务器
+	<form action="https://www.baidu.com" method="GET">
+		<p>
+			账号：
+			<input type="text" name="loginid">
+		</p>
+		<p>
+			密码：
+			<input type="text" name="loginpwd">
+		</p>
+		<p>
+			<button type="submit">提交</button>
+		</p>
+	</form>
+
+
+	表单状态
+	readonly属性：布尔属性，是否只读
+	disabled属性：布尔属性，是否禁用，改变表单显示样式
+</body>
+</html>
