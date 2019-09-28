@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			margin:0;
+		}
+
+		.app{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+		}
+
+		h1{
+			margin: 0;
+		}
+
+		.header{
+			height: 60px;
+			background: #000;
+			color: #fff;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+		}
+
+		.container{
+			width: 100%;
+			height: 100%;
+			background: lightblue;
+			padding-top: 60px;
+			box-sizing: border-box;
+		}
+
+		.container .left{
+			float: left;
+			width: 300px;
+			background-color: #999;
+			color: #fff;
+			height: 100%;
+			box-sizing: border-box;
+			overflow: auto;
+		}
+
+		.container .main{
+			overflow: hidden;
+			height: 100%;
+			background: blue;
+			padding: 20px;
+			box-sizing: border-box; 
+			overflow: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="app">
+		<header class="header">
+			<h1>哈哈哈哈哈哈</h1>
+		</header>
+		<div class="container">
+			<aside class="left"></aside>
+			<aside class="main"></aside>
+		</div>
+	</div>
+</body>
+</html>
