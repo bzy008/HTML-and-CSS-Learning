@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	浏览器兼容性
+
+	厂商前缀
+	IE： -ms-
+	chrome，safari： -webkit-
+	Opera： -o-
+	Firefox：-moz-
+
+	多个背景图选一个背景
+
+	css hack
+	根据不同的浏览器（主要针对IE），设置不同的样式和元素
+
+	1.样式
+	IE，css特殊前缀
+	*属性，兼容IE5,6,7
+	_属性，兼容IE5-6
+	属性值\9,兼容IE5-IE10
+	属性值\0，兼容IE8-IE10
+	属性值\9\0,兼容IE9-IE10
+
+	IE5,6,7的外边距bug，浮动元素的左外边距翻倍
+
+	2.条件判断
+
+	渐进增强 和 优雅降级
+	两种解决兼容性问题的思路
+	渐进增强：先适应大部分浏览器，然后针对新版本浏览器加入新的样式
+	优雅降级：先制作完整的功能，然后针对低版本浏览器进行特殊处理
+
+	caniuse.com
+	查找css兼容性
+
+</body>
+</html>
